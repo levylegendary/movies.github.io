@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" type="text/css" href="CSS/styled.css"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $("#div2").animate({
+      left: '250px',
+      opacity: '0.9',
+      height: 'toggle',
+      width: '150px',
+
+    });
+  });
+});
+
+
+</script>
+<style type="text/css">
+	div {text-align: center;
+		padding-top: 25px;}
+</style>
+</head>
+<body>
+
+  <div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+        <span>Movie Recommendation Menu</span>
+      <div class="dropdown-content">
+      <a href="homepage.html">  Home Page</a>
+      <br>
+      <a href="radiosite.html">  Radio Site</a>
+      <br>
+      <a href="searchname.html">Search by Genre Site </a>
+      <br>
+      <a href="displayblock.html">Display Block </a>
+      <br>
+      <a href="innerhtml.html">Multiple InnerHTMLS</a>
+      <br>
+      <a href="jqueryintro.html">Jquery Clickables</a>
+      <br>
+      <a href="legendaryhome.html">Site 1</a>
+    </div></div></div>
+
+
+<p>Display 3 legendary movies</p>
+
+<button>Click to display or exit</button><br><br>
+
+<button id="button2">Movie Of The Month</button>
+
+
+<div id="div1" style="width:80px;height:80px;background-color:red; display: none ">Count of Monte Cristo</div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green; display: none; position: relative;">Clerks</div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue; display: none; position: fixed;">Us</div>
+
+</body>
+</html>

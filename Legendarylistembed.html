@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			video {padding: 10px;}
+
+			table,th,td {text-align: center;border:2px solid black; width: 50%; border-collapse: collapse;margin-left: 25%;}
+			td {padding: 20px;}
+			tr:hover {background-color: gold;}
+	  		table:nth-child(even) {background-color: #f2f2f2;}
+	  		table:nth-child(odd) {background-color: white;}
+
+	  		th {background-color: red;color: white;}
+
+	  		
+
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="legendarysstyle.css">
+		
+</style>
+		<title>Legendarys Movie Recs</title>
+	</head>
+<body>
+
+	<h1 class="titled"> Legendary Movie List </h1>
+
+
+	<div class="sidebar dropdown">
+		  <span>Menu</span>
+		  <div class="dropdown-content">
+		  	<a href="homepage.html">  Home Page</a>
+		  	<br>
+			<a href="legendaryhome.html"> Recommendation By Genre<br></a>
+			<br>
+			<a href="legendarylistembed.html"> Legendary Movie Lists<br></a>
+			<br>
+			<a href="legendarymovies.html">100 great Movies</a>
+
+		</div>
+		</div>
+
+	<div class="videosite">
+
+			<video controls autoplay>
+		  	<source src="moviequotes.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+
+			
+	<div id="toprated">
+		<iframe src="topratedmovies.html" height="500px" width="600px"></iframe>
+	</div>
+	</div>
+
+	<p id="imdblink" style="background: black ;"><a href=IMDB.com>Visit IMDB.com</a></p>
+
+
+	<button onclick="myFunction()">Sort Movies</button>
+	<p id="sortedlist" style="background: black; color: white"></p>
+
+	<div id="docs" style="overflow-x:auto;">
+
+		<table>
+		<th>Name</th>
+		<th>Year</th>
+	</table>
+	<table>
+		<td class="dmovies">The Fog of War:Eleven Lessons from the Life of Robert S. McNamara</td>
+		<td>(2003)</td>
+	</table>
+	<table>
+		<td class="dmovies">Baraka</td>
+		<td>(1992)</td>
+	</table>
+	<table>
+		<td class="dmovies">The Interrupters</td>
+		<td> (2011) </td>
+	</table>
+	<table>
+		<td class="dmovies">Harmontown</td>
+		<td> (2014)</td>
+	</table>
+	<table>
+		<td class="dmovies">The Cove</td>
+		<td> (2009)</td>
+	</table>
+	<table>
+		<td class="dmovies">Wont You Be My Neighbor</td>
+		<td> (2018)</td>
+	</table>
+	<table>
+		<td class="dmovies">Inside Job</td>
+		<td> (2010)</td>
+	</table>
+	<table>
+		<td class="dmovies">Game Life after the Math</td>
+		<td> (2008)</td>
+	</table>
+	<table>
+		<td class="dmovies">Zeitgiest</td>
+		<td> (2007)</td>
+	</table>
+	<table>
+		<td class="dmovies">13th</td>
+		<td> (2016)</td>
+	</table>
+	<table>
+		<td class="dmovies">Citizenfour</td>
+		<td> (2014)</td>
+	</table>
+	<table>
+		<td class="dmovies">The King of Kong A Fistful of Quarters</td>
+		<td> (2007)</td>
+	</table>
+	<table>
+		<td class="dmovies">The Sixities</td>
+		<td>(2014 Tv Special)</td>
+	</table>
+	<table>
+		<td class="dmovies">Bowling for Columbine</td>
+		<td> (2002)</td>
+	</table>
+	<table>
+		<td class="dmovies">Going Clear Scientology and the prison of belief </td>
+		<td> (2015)</td>
+	</table>
+	<table>
+		<td class="dmovies">Boys Alone</td>
+		<td> (2002)</td>
+	</table>
+	<table>
+		<td class="dmovies">Kanehstake: 270 years of resistance </td>
+		<td> (1993)</td>
+	</table>
+	<table>
+		<td class="dmovies">Grizzly Man</td>
+		<td> (2005)</td>
+	</table>
+	<table>
+		<td class="dmovies">Life itself </td>
+		<td>(2014)</td>
+	</table>
+	<table>
+		<td class="dmovies">Nanook of the north</td>
+		<td> (1922)</td>
+	</table>
+	<table>
+		<td class="dmovies">Las hurdes</td>
+		<td> (1933)</td>
+	</table>
+	<table>
+		<td class="dmovies">Triumph of the will</td>
+		<td> (1935)</td>
+	</table>
+	<table>
+		<td class="dmovies">Do you trust this computer</td>
+		<td> (2018)</td>
+	</table>
+	<table>
+		<td class="dmovies">Richard Pryor Omit the Logic </td>
+		<td>(2013)</td>
+	</table>
+	<table>
+		<td class="dmovies">Helvetica</td>
+		<td> (2007)</td>
+	</table>
+	<table>
+		<td class="dmovies">Catfish </td>
+		<td>(2010)</td>
+	</table>
+	<table>
+		<td class="dmovies">Deep Web</td>
+		<td> (2015)</td>
+	</table>
+	<table>
+		<td class="dmovies">What the Bleep do we know </td>
+		<td>(2006)</td>
+	</table>
+	<table>
+		<td class="dmovies">Freakonomics </td>
+		<td>(2010)</td>
+	</table>
+	<table>
+		<td class="dmovies">Night and fog</td>
+		<td> (1956)</td>
+	</table>
+	<table>
+		<td class="dmovies">The perverts guide to cinema </td>
+		<td>(2006)</td>
+	</table>
+	<table>
+		<td class="dmovies">Fahrenheight 9/11 </td>
+		<td>(2004)</td>
+	</table>
+	<table>
+		<td class="dmovies">Dirty wars </td>
+		<td>(2013)</td>
+	</table>
+	<table>
+		<td class="dmovies">Cartel Land </td>
+		<td>(2015)</td>
+	</table>
+	<table>
+		<td class="dmovies">A good american </td>
+		<td>(2015)</td>
+	</table>
+	<table>
+		<td class="dmovies">I am heath ledger</td>
+		<td> (2017)</td>
+	</table>
+	<table>
+		<td class="dmovies">Monkey Kingdom </td>
+		<td>(2015)</td>
+	</table>
+	<table>
+		<td class="dmovies">Fyre</td>
+		<td> (2019)</td>
+	</table>
+	<table>
+		<td class="dmovies">The China Hustle</td>
+		<td> (2017)</td>
+	</table>
+	<table>
+		<td class="dmovies">Kimdotcom </td>
+		<td>(2017)</td>
+	</table>
+	<table>
+		<td class="dmovies">The greatest movie ever sold</td>
+		<td> (2011)</td>
+	</table>
+	<table>
+		<td class="dmovies">Millonaire Basement Wars</td>
+		<td> (2015)</td>
+	</table>
+	<table>
+		<td class="dmovies">OC87 The Obsessive Compulsive Major Depression Bipolar Aspergers Movie </td>
+		<td>(2010)</td>
+	</table>
+	<table>
+		<td class="dmovies">Tricked </td>
+		<td>(2013)</td>
+	</table>
+	<table>
+		<td class="dmovies">How to make money selling drugs</td>
+		<td> (2012)</td>
+	</table>
+	<table>
+		<td class="dmovies">The yes men</td>
+		<td> (2003)</td>
+	</table>
+	<table>
+		<td class="dmovies">The most unkown </td>
+		<td>(2018)</td>
+	</table>
+	<table>
+		<td class="dmovies">Voyeur </td>
+		<td>(2017)</td>
+	</table>
+	<table>
+		<td class="dmovies">A gray state </td>
+		<td>(2017)</td>
+	</table>
+	<table>
+		<td class="dmovies">Hot Girls Wanted </td>
+		<td>(2015)</td>
+	</table>
+	<table>
+		<td class="dmovies">Mansome </td>
+		<td>(2012)</td>
+	</table>
+	</div>
+
+
+<script type="text/javascript">
+			var movies = [];
+
+			for (var i = 0 ; i < 100 ; i++) {
+		movies.push(document.getElementsByClassName("dmovies")[i].innerHTML);
+	}
+	function myFunction() {
+ 		movies.sort();	 
+ 	 console.log(movies)
+		for (var i = 0 ; i < movies.length; i++) {
+		 document.getElementById("sortedlist").innerHTML += movies[i] + "<br>";
+	}
+
+ 	 	}
+</script>
+
+</body>
+</html>

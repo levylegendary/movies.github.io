@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="CSS/styled.css"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $(".test1").text(function(i, origText){
+      if (i==0) {
+              return "Old text: " + origText + " Movie Rating: 6/10  (index: " + i + ")"; 
+
+      }
+      else if (i==1){
+        $(this).css("color" ,'red'); 
+        return "Old text: " + origText + " Good Movie (index: " + i + ")";
+      }
+      else if (i==2){
+        return "Old text: " + origText + " Bad Movie (index: " + i + ")";
+
+      }
+      else if (i==3){
+        return "Old text: " + origText + " Bad Movie (index: " + i + ")";
+      }
+    });
+
+  });
+
+  $("#btn2").click(function(){
+    $(".test2").html(function(i, origText){
+      if (i==0) {
+              $(this).css({"color":'white', "background-color":'black'})
+              return "Movie: " + origText + " <br>Rating:  <b>7/10</b>"; 
+
+      }
+      else if (i==1){
+         $(this).css({"color":'white', "background-color":'black'}); 
+         return "Movie: " + origText + "<br>Rating: <b>7/10<b>";
+      }
+      else if (i==2){
+        $(this).css({"color":'white', "background-color":'black'})
+        return "Movie: " + origText + "<br>Rating: <b>8/10<b>";
+      }
+      else if (i==3){
+        $(this).css({"color":'white', "background-color":'black'})
+        return "Movie: " + origText + "<br>Rating: <b>8/10<b>";
+      }
+      else if (i==4){
+              $(this).css({"color":'white', "background-color":'black'})
+        return "Movie: " + origText + "<br>Rating: <b>7/10<b>";
+      }
+    });
+  });
+});
+
+</script>
+
+<style type="text/css">
+  #content {text-align: center;}
+
+  .test2:hover {
+  background-color: blue;color: yellow;
+</style>
+</head>
+<body>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+        <span>Movie Recommendation Menu</span>
+      <a href="homepage.html">  Home Page</a>
+      <br>
+      <a href="radiosite.html">  Radio Site</a>
+      <br>
+      <a href="searchname.html">Search by Genre Site </a>
+      <br>
+      <a href="displayblock.html">Display Block </a>
+      <br>
+      <a href="innerhtml.html">Multiple InnerHTMLS</a>
+      <br>
+      <a href="jqueryintro.html">Jquery Clickables</a>
+      <br>
+      <a href="appendtxt.html">Append your own movie list</a>
+      <br>
+      <a href="movieswithratingbutton.html">Movies list with rating</a>
+      <br>
+      <a href="slidedownmovies.html">Movies show with a slide down</a>
+      <br>
+      <a href="moviesham.html">Map of Hamilton with movies filmed here</a>
+      <br>
+      <a href="legendaryhome.html">Site 1</a>
+      <br>
+      <a href="site 1/blanksite.html">Site 2</a>
+    </div></div></div>
+
+
+<div id="content">
+
+<p class="test2">Comedy Movie is <b>Waiting</b></p>
+<p class="test2">Action movie is <b>Swordfish</b> </p>
+<p class="test2">Thriller movie is <b>Secret Window</b> </p>
+<p class="test2">Horror movie is <b>The Silence of the Lambs</b></p>
+<p class="test2">Sci Fi movie is <b>Cloud Atlas</b></p>
+
+<button id="btn2">Show Rating</button>
+<div>
+</body>
+</html>

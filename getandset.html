@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>		
+	<script>
+	$(document).ready(function(){
+		$('#button1').click(function(){
+		$('#demoresult').html(("Text:<br>" + $('.demo').text()));
+		});
+
+
+	$('#button2').click(function(){
+		
+		$('#demoresult2').text(("Movie of the month is Count of Monte Cristo" ));
+	});
+});
+</script>
+	<title></title>
+</head>
+<body>
+<p id="demoresult"></p>
+<p id="demoresult2"></p>
+
+<p class="demo" hidden="none">Idiocracy (2006)<br></p>
+<p class="demo" hidden="none">The Boondock Saints (1999)
+<br>Get Him to the Greek (2010)
+<br>Scott Pilgrim vs. the World (2010)</p>
+
+<button id="button1">Get Movies</button>
+<button id="button2">Set a movie of the month</button>
+
+</body>
+</html>

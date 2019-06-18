@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var p = $("p");
+    p.animate({height: '300px', opacity: '0.4'}, "slow");
+    p.animate({height: '100px', opacity: '0.4'}, "slow");
+    p.animate({width: '100px', opacity: '0.8'}, "slow");
+    p.animate({width: '300px', opacity: '0.8'}, "slow");
+
+  });
+});
+
+$(document).ready(function(){
+  $("button").click(function(){
+    var image = $("img");
+    image.animate({height: '300px', opacity: '0.4'}, "slow");
+    image.animate({height: '100px', opacity: '0.4'}, "slow");
+    image.animate({width: '100px', opacity: '0.8'}, "slow");
+    image.animate({width: '300px', opacity: '0.8'}, "slow");
+
+  });
+});
+</script>
+<style type="text/css">
+	img {float: right}
+	* {text-align: center}
+</style> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<div id="moved">
+<p style="position: absolute;">Movies are important because they allow the watcher to escape from reality and live within the movie. Experincing the experinces of the characters and learning with the characters. It has been studied that people connect with tv and movie characters like they are real people. We bond to the stories we watch and feel great feelings for the people in them. If they hurt the viewer may hurt, and when the character experiences a loss that pain can be felt by the viewer. Movies help people come to terms with real life events, escape them , and understand each other a little more through the power of storytelling. </p><br>
+</div>
+<br>
+<br>
+<br>
+<img src="movies.jpg" style= width="500px" height="300px">
+
+</body>
+</html>

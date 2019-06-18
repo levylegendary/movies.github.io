@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+<link rel="stylesheet" type="text/css" href="legendarysstyle.css">
+
+		<style>
+		
+
+
+.btn-group button {
+  background-color: black; /* Green background */
+  border: 10px solid gold; /* Green border */
+  color: white; /* White text */
+  background-color: black;
+  margin: 20px 20px 25px 5px;				
+  padding: 5px 20px 5px 2px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: center; /* Float the buttons side by side */
+  border-radius: 12px;
+}
+
+.btn-group button:not(:last-child) {
+  border-style: 2px solid black; /* Prevent double borders */
+  border-radius: 15px 25px;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: gold;
+}
+
+.bordergroup {
+
+	border: 10px solid gold;
+	border-radius: 15px 25px;
+	width: 80%; height: 80%;
+  background-color: white; /* BORDER BLOCK BACKGROUND FOR BUTTONS*/
+  color: black;
+  opacity: 0.9;
+
+  margin: 0px 100px 0px 100px	 ;
+  padding: 10px 10px 0px 2px;
+
+}
+
+
+
+</head>
+</style>
+		<title>Legendarys Movie Recs</title>
+	</head>
+	<body>
+
+
+		<h1 class="titled"> Legendary Movie Recomendations </h1>
+
+		<div class="sidebar dropdown">
+		  <span>Menu</span>
+		  <div class="dropdown-content">
+		  	<a href="homepage.html">  Home Page</a>
+		  	<br>
+			<a href="legendaryhome.html"> Recommendation By Genre<br></a>
+			<br>
+			<a href="legendarylistembed.html"> Legendary Movie Lists<br></a>
+			<br>
+			<a href="legendarymovies.html">100 great Movies</a>
+
+		</div>
+		</div>
+
+		<h2 class="sty"> Movies in the list are recommended to be watched </h2>
+
+
+
+		<div class="bordergroup">
+
+			<div class="btn-group">
+
+				<p id="demo"></p> 
+
+
+				<button type="button" onclick='document.getElementById("demo").innerHTML = "Raging Bull (1980) <br> Rocky (1976) <br> The Blind Side (2009) <br> Creed (2015) <br> Moneyball (2011) <br> Rudy (1993) <br> I, Tonya (2017)<br> Southpaw (2015) <br> Coach Carter (2005) <br> The Basketball Diaries (1995)<br>The Mighty Ducks (1992)<br>Happy Gilmore (1996) </br>  "'>
+				Sports Dramas</button>
+
+
+
+				<button type="button" onclick='document.getElementById("demo").innerHTML = "Star Wars: The Empire Strikes Back (1989) <br>Room (I) (2015) <br> Fargo (1996) <br> The Imitation Game (2014)<br> Blade Runner 2049 (2017)<br> Black Swan (2010) <br> Blood Diamond (2006)<br> The Shawshank Redemption (1994)<br> The Godfather (1972) <br> Pulp Fiction (1994) <br> Schindlers List (1993) <br> Fight Club (1999)</br> "'>Dramas</button>
+
+				<button type="button" onclick='document.getElementById("demo").innerHTML = "The Usual Suspects (1995) <br> Se7en (1995) <br> The Silience of the Lambs (1991) <br> The Departed (2006) <br> Rear Window (1954)<br> Reservoir Dogs (1992) <br> Blade Runner (1982) <br> Wild Tales (2014) <br> Shutter Island (2010) <br> No Country for Old Men (2007) <br> Donnie Darko (2001) <br>  Jurassic Park (1993)</br> "'>Thriller</button>
+
+				<button type="button" onclick='document.getElementById("demo").innerHTML = " Inception (2010) <br>The Matrix(1999) <br>Star Wars: A New Hope (1977) <br> Avengers (2012) <br>Terminator 2:Judgment Day (1991)<br>Aliens (1979) <br> Mad Max: Fury Road (2015) <br>They Live (1988)<br>Interstellar (2014)<br>WALLE (2008) <br> Eternal Sunshine of the Spotless Mind (2004)<br> Metropolis (1927)</br> "'>SciFi</button>
+
+
+				<button type="button" onclick='document.getElementById("demo").innerHTML = "World War Z (2013) <br> The Dark Knight(2008)  <br>Leon The Professional(1994)</br>Indiana Jones and the Raiders of the Lost Ark (1981)</br> V For Vendetta (2005)</br>Batman Begins (2005)</br> Indiana Jones and the Last Crusade (1989)</br> Die Hard (1988)</br> Logan (2017)</br> Guardians Of the Galaxy (2014)</br> The Raid (2011)</br> The Bourne Identity (2002)</br>"'>Action</button>
+
+				<button type="button" onclick='document.getElementById("demo").innerHTML = 
+				"Alien (1979) <br> Psycho (1960) <br> The Shining (1989) <br> Shaun Of The Dead (2004) <br> Halloween (1978) <br> Get Out (2004) <br> Zombie Land (2009) <br> 28 Days Later (2002) <br> Army Of Darkness (1992)<br> REC (2007)<br>The Evil Dead (1981)<br> They Live (1988) </br>"'>Horror</button>
+
+					<button type="button" onclick='document.getElementById("demo").innerHTML = 
+					"Freakonomics (2010) <br>Night and fog (1956) <br>The perverts guide to cinema (2006)<br>Fahrenheight 9/11 (2004)<br>Dirty wars (2013)<br>Cartel Land (2015)<br>A good american (2015)<br>I am heath ledger (2017)<br>Monkey Kingdom (2015)<br>Fyre (2019)<br>The China Hustle (2017)<br>Kimdotcom (2017) "'>Documentary</button>
+
+					<button type="button" onclick='document.getElementById("demo").innerHTML = 
+					"Mike Tyson: Undisputed Truth (2013 TV Special)<br>Kevin Hart: Let Me Explain (2013)<br>No Cure for Cancer (1992)<br>Dave Chappelle: Killin Them Softly (2000)<br>George Carlin: Jammin in New York (1992)<br>Eddie Izzard: Dress to Kill (1999)<br>Robin Williams Live on Broadway (2002)<br>Richard Pryor: Live on the Sunset Strip (1982)<br>Eddie Murphy: Delirious (1983)<br>Steve Martin: A Wild and Crazy Guy (1978)<br>Zach Galifianakis: Live at the Purple Onion (2006 )<br> David Cross: The Pride Is Back (1999)<br>Wanda Sykes: Ima Be Me (2009)<br>  "'>Stand Up</button>
+				
+
+
+				
+
+		</div>
+		</div>
+
+		<script type="text/javascript">
+			txt1 = "Movie of the month is ";
+			txt1 += "Count of Monte Cristo";
+			var x = 
+			document.getElementById("demo").innerHTML = txt1;
+
+		
+
+		</script>
+</body>
+</html>

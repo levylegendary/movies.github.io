@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="Jquery/jqueryintroexternalsheet.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="CSS/styled.css"> 
+
+	
+<style type="text/css">
+p {text-align: center;}	
+p:nth-of-type(even) {
+  background: yellow;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+  		  <span>Movie Recommendation Menu</span>
+      <a href="homepage.html">  Home Page</a>
+      <br>
+			<a href="radiosite.html">  Radio Site</a>
+			<br>
+			<a href="searchname.html">Search by Genre Site </a>
+			<br>
+			<a href="displayblock.html">Display Block </a>
+			<br>
+			<a href="innerhtml.html">Multiple InnerHTMLS</a>
+			<br>
+      <a href="jqueryintro.html">Jquery Clickables</a>
+      <br>
+      <a href="appendtxt.html">Append your own movie list</a>
+      <br>
+      <a href="movieswithratingbutton.html">Movies list with rating</a>
+      <br>
+      <a href="slidedownmovies.html">Movies show with a slide down</a>
+      <br>
+      <a href="moviesham.html">Map of Hamilton with movies filmed here</a>
+      <br>
+			<a href="legendaryhome.html">Site 1</a>
+      <br>
+      <a href="site 1/blanksite.html">Site 2</a>
+    </div></div></div>
+	
+
+<h1>What movie do you want to watch? Double click to delete movie</h1>
+<button onclick="myFunc()">Sort by year</button>
+
+<p class="hidden">Idiocracy (2006)
+<p class="hidden">The Boondock Saints (1999)</p>
+<p class="hidden">Get Him to the Greek (2010)</p>
+<p class="hidden">Scott Pilgrim vs. the World (2010)</p>
+<p class="hidden">One Flew Over the Cuckoo's Nest (1975)</p>
+<p class="hidden">Juice (1992) </p>
+<p class="hidden">Waiting... (I) (2005)</p>
+<p class="hidden">A Scanner Darkly (2006)</p>
+<p class="hidden">The Silence of the Lambs (1991)</p>
+<p class="hidden"> Mike Tyson: Undisputed Truth (2013 TV Special)</p>
+<p class="hidden">Cloud Atlas (2012)</p>
+<p class="hidden">The Fog of War: Eleven Lessons from the Life of Robert S. McNamara (2003)</p>
+<p class="hidden">The Fifth Element (1997)</p>
+<p class="hidden">The Matrix (1999)</p>
+<p class="hidden"> Guardians of the Galaxy (2014)</p>
+<p class="hidden"> Natural Born Killers (1994)</p>
+<p class="hidden">The Lion King (1994) </p>
+<p class="hidden">Philadelphia (1993)</p>
+<p class="hidden">The Count of Monte Cristo (2002)</p>
+<p class="hidden">The 40 Year Old Virgin (2005)</p>
+<p class="hidden">Blow (2001)</p>
+<p class="hidden">Dazed and Confused (1993) </p>
+<p class="hidden">Raging bull (1980)</p>
+<p class="hidden">Kiss Kiss Bang Bang (2005)</p>
+<p class="hidden">The Bourne Identity (2002)</p>
+<p class="hidden">American history X (1998)</p>
+<p class="hidden">Face/Off (1997)</p>
+<p class="hidden">Toy Story 3 (2010)</p>
+<p class="hidden">In Too Deep (1999)</p>
+<p class="hidden">Kiss Kiss (Bang Bang) (2001)</p>
+<p class="hidden">The Big Lebowski (1998)</p>
+<p class="hidden">Paycheck (2003)</p>
+<p class="hidden">The Dark Knight Rises (2012)</p>
+<p class="hidden">Baraka (1992)</p>
+<p class="hidden">Role Models (2008)</p>
+<p class="hidden">The Crying Game (1992)</p>
+<p class="hidden">Léon: The Professional (1994)  </p>
+<p class="hidden">Limitless (I) (2011)</p>
+<p class="hidden">The Basketball Diaries (1995) </p>
+<p class="hidden">Pitch Perfect (2012)</p> 
+<p class="hidden">Horrible Bosses (2011)</p>
+<p class="hidden">Superbad (2007)</p>
+<p class="hidden">Snatch (2000)</p>
+<p class="hidden">Kids (1995)</p>
+<p class="hidden">Citizen Kane (1941)</p>
+<p class="hidden">Paid In Full (2002)</p>
+<p class="hidden">Clerks (1994)</p>
+<p class="hidden">Wolf of Wall Street (2013)</p>
+<p class="hidden">The Interrupters (2011)</p>
+<p class="hidden">Trainspotting (1996)</p>
+<p class="hidden">Pulp Fiction (1994)</p>
+<p class="hidden">Harmontown(2014)</p>
+<p class="hidden">Lock,Stock,And Two Smoking Barrels(1998)</p>
+<p class="hidden">Dogma (1999(</p>
+<p class="hidden">Requiem For a dream (2000)</p>
+<p class="hidden">City Of God (2002)</p>
+<p class="hidden">Ave Ventura Pet Detective (1994)</p>
+<p class="hidden">Scent of a woman (1992)</p>
+<p class="hidden">Hotel Rwanda (2004)</p>
+<p class="hidden">Homeward Bound: The Incredible Journey (1993)</p>
+<p class="hidden">Eternal Sunshine of the spotless mind (2004) </p>
+<p class="hidden">The Bourne Ultimatum (2007) </p>
+<p class="hidden">The Taking of Pelham 123 (2009)</p>
+<p class="hidden">Back to the Future (1985)</p>
+<p class="hidden"> Killing Them Softly (2012)</p>
+<p class="hidden">Rudy (1993)</p>
+<p class="hidden">The Spectacular Now (2013)</p>
+<p class="hidden">Back to the Future (1985)</p>
+<p class="hidden"> Logan (2017)</p>
+<p class="hidden">50/50 (2011)</p>
+<p class="hidden">Death Proof (2007)</p>
+<p class="hidden">	Mallrats (1995) </p>
+<p class="hidden">Psycho (1960)</p>
+ <p class="hidden">Catfish (2010)</p>
+<p class="hidden">Citizenfour (2014)</p>
+<p class="hidden">Eyes Wide Shut (1999)</p>
+<p class="hidden"> Enemy of the State (1998)</p>
+<p class="hidden">The Sixties (2014)</p>
+<p class="hidden">500 Days of Summer (2009)</p>
+ <p class="hidden"> Alien (1979)</p>
+<p class="hidden">Sixteen Candles (1984)</p>
+<p class="hidden">Annie Hall (1977)</p>
+<p class="hidden">Rocky (1976)</p>
+<p class="hidden">The Bourne Supremacy (2004)</p>
+<p class="hidden">Garden State (2004)</p>
+<p class="hidden">The Zookeeper's Wife (2017)</p>
+<p class="hidden">Knocked Up (2007)</p>
+<p class="hidden">Ted (2012)</p>
+<p class="hidden">Teenage Mutant Ninja Turtles (1990)</p>
+<p class="hidden">The Revenant (2015)</p>
+<p class="hidden">RoboCop (1987)</p>
+<p class="hidden">Freakonomics (2010)</p>
+<p class="hidden">Richard Pryor: Omit the Logic (2013)</p>
+<p class="hidden">Only the Brave (2017)</p>
+<p class="hidden"> Nick of Time (1995)</p>
+<p class="hidden">Red State (2011)</p>
+<p class="hidden">Jackie Brown (1997)</p>
+<p class="hidden">Manic (2001)</p>
+<p class="hidden">Monty Python and the Holy Grail (1975)</p>
+ <p class="hidden">Stand by Me (1986)</p>
+<p class="hidden">Unstoppable (2010)</p>
+<p class="hidden">Deadpool (2016)</p>
+
+</div>
+
+<hr>
+
+<!--<button onclick="myFunction()">Sort Movies</button>-->
+
+<!--<p id="demo"></p>-->
+
+<p id="demo2"></p>
+
+<script type="text/javascript">
+	var movies = [];
+	var mo = [
+"2006 - Idiocracy ", 
+"1999 - The Boondock Saints", 
+"2010 - Get Him to the Greek", 
+"2010 - Scott Pilgrim vs. the World",
+"1975 - One Flew Over the Cuckoo's Nest", 
+"1992 - Juice",  
+"2005 - Waiting...",
+"2006 - A Scanner Darkly", 
+"1991 - The Silence of the Lambs ",
+ "2013 Mike Tyson: Undisputed Truth ",
+"2012 - Cloud Atlas",
+"2003 - The Fog of War: Eleven Lessons from the Life of Robert S. McNamara",
+"1997 - The Fifth Element",
+"1999 - The Matrix",
+"2014 - Guardians of the Galaxy ",
+"1994 - Natural Born Killers",
+ "1994 - The Lion King ",
+"1993 - Philadelphia ",
+"2002 - The Count of Monte Cristo ",
+"2005 - The 40 Year Old Virgin",
+"2001 - Blow ",
+"1993 - Dazed and Confused (1993)",
+"1980 - Raging bull ",
+"2005 - Kiss Kiss Bang Bang ",
+"2002 - The Bourne Identity ",
+"1998 - American history X ",
+"1997 - Face/Off ",
+"2010 - Toy Story 3 ",
+"1999 - In Too Deep",
+"2001 - Kiss Kiss (Bang Bang)",
+"1998 - The Big Lebowski",
+"2003 - Paycheck ",
+"2012 - The Dark Knight Rises ",
+"1992 - Baraka ",
+"2008 - Role Models",
+"1992 - The Crying Game ",
+"1994 - Léon: The Professional  ",
+"2011 - Limitless (I)",
+"1995 - The Basketball Diaries  ",
+"2012 - Pitch Perfect ",
+"2011 - Horrible Bosses ",
+"2007 - Superbad ",
+"2000 - Snatch ",
+"1995 - Kids ",
+"1941 - Citizen Kane ",
+"2002 - Paid In Full ",
+"1994 - Clerks ",
+"2013 - Wolf of Wall Street ",
+"2011 - The Interrupters ",
+"1996 - Trainspotting ",
+"1994 - Pulp Fiction ",
+"2014 - Harmontown",
+"1998 - Lock,Stock,And Two Smoking Barrels",
+"19990 - Dogma ",
+"2000 - Requiem For a dream ",
+"2002 - City Of God ",
+"1994 - Ave Ventura Pet Detective",
+"1992 - Scent of a woman ",
+"2004 - Hotel Rwanda ",
+"1993 - Homeward Bound: The Incredible Journey ",
+"2000 - Eternal Sunshine of the spotless mind ",
+"2007 - The Bourne Ultimatum  ",
+"2009 - The Taking of Pelham 123", 
+"1985 - Back to the Future ",
+"2012 - Killing Them Softly ",
+"1993 - Rudy ",
+"2013 - The Spectacular Now",
+"1985 - Back to the Future",
+"2017 - Logan ",
+"2011 - 50/50",
+"2007 - Death Proof",
+"1995 - Mallrats",
+"1960 - Psycho ",
+"2010 - Catfish ",
+"2014 - Citizenfour ",
+"1999 - Eyes Wide Shut ",
+"1998 - Enemy of the State ",
+"2014 - The Sixties ",
+"2008 - 500 Days of Summer ",
+"1979 - Alien",
+"1984 - Sixteen Candles ",
+"1977 - Annie Hall ",
+"1976 - Rocky ",
+"2004 - The Bourne Supremacy ",
+"2004 - Garden State ",
+"2017 - The Zookeeper's Wife ",
+"2007 - Knocked Up ",
+"2012 - Ted ",
+"1990 - Teenage Mutant Ninja Turtles ",
+"2015 - The Revenant ",
+"1987 - RoboCop ",
+"2010 - Freakonomics ",
+"2013 - Richard Pryor: Omit the Logic ",
+"2017 - Only the Brave ",
+"1995 - Nick of Time ",
+"2011 - Red State ",
+"1997 - Jackie Brown ",
+"2001 - Manic ",
+"1975 - Monty Python and the Holy Grail ",
+"1986 - Stand by Me ",
+"2010 - Unstoppable ",
+"2016 - Deadpool "
+ ]
+	//var text = document.getElementsByTagName("p");
+
+	
+	//for (var i = 0 ; i < text.length ; i++) {
+		movies.push(document.getElementsByTagName("p")[i].innerHTML);
+	//}
+
+
+	//for (var i = 0 ; i < text.length ; i++) {
+	//document.getElementById('demo').innerHTML =  movies ;	
+	//}
+
+function myFunction() {
+  movies.sort();	 //(function((a, b){return a - b}));
+
+  document.getElementById("demo").innerHTML = movies  ;
+}
+
+function myFunc() {
+  mo.sort();	 //(function((a, b){return a - b}));
+    for (var i = 0 ; i < mo.length; i++) {
+
+  document.getElementById("demo2").innerHTML += mo[i] + "<br>" ;
+}
+}
+console.log(movies)
+	 
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/styled.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+
+function appendText() {
+  
+  var text4 = $('#inputtext').val();
+  $("#result2").append(text4 + "<br>");   // Append new elements
+}
+
+$(document).ready(function(){
+  $("#result").click(function(){ //can replace with .on ('click', function) also
+    $(this).hide();
+  });
+});
+</script>
+<style type="text/css">
+	
+		#inputlist {text-align: center; margin-left: 100px; }
+
+
+</style>
+</head>
+<body>
+
+
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+        <span>Movie Recommendation Menu</span>
+      <a href="homepage.html">  Home Page</a>
+      <br>
+      <a href="radiosite.html">  Radio Site</a>
+      <br>
+      <a href="searchname.html">Search by Genre Site </a>
+      <br>
+      <a href="displayblock.html">Display Block </a>
+      <br>
+      <a href="innerhtml.html">Multiple InnerHTMLS</a>
+      <br>
+      <a href="jqueryintro.html">Jquery Clickables</a>
+      <br>
+      <a href="appendtxt.html">Append your own movie list</a>
+      <br>
+      <a href="movieswithratingbutton.html">Movies list with rating</a>
+      <br>
+      <a href="slidedownmovies.html">Movies show with a slide down</a>
+      <br>
+      <a href="moviesham.html">Map of Hamilton with movies filmed here</a>
+      <br>
+      <a href="legendaryhome.html">Site 1</a>
+      <br>
+      <a href="site 1/blanksite.html">Site 2</a>
+    </div></div></div>
+<br>
+<div id="inputlist">
+<input id="inputtext" type="text" name="" value="Insert Movies">
+<button onclick="appendText()">Make a movie list (click example to erase)</button>
+<p id="result">Count of monte cristo
+<br>It
+<br>Dazed and confused<br></p>
+<p id="result2"></p>
+</div>
+</body>
+
+</html>

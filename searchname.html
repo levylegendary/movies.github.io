@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<link rel="stylesheet" type="text/css" href="CSS/styled.css">
+<style type="text/css">
+  body {color: white;}
+  #searchbox {text-align: center;
+    margin: 50px 500px;
+    background-color: red;
+    border-radius: 15px 15px;}
+    
+</style>
+<body>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+        <span>Movie Recommendation Menu</span>
+      <a href="homepage.html">  Home Page</a>
+      <br>
+      <a href="radiosite.html">  Radio Site</a>
+      <br>
+      <a href="searchname.html">Search by Genre Site </a>
+      <br>
+      <a href="displayblock.html">Display Block </a>
+      <br>
+      <a href="innerhtml.html">Multiple InnerHTMLS</a>
+      <br>
+      <a href="jqueryintro.html">Jquery Clickables</a>
+      <br>
+      <a href="appendtxt.html">Append your own movie list</a>
+      <br>
+      <a href="movieswithratingbutton.html">Movies list with rating</a>
+      <br>
+      <a href="slidedownmovies.html">Movies show with a slide down</a>
+      <br>
+      <a href="moviesham.html">Map of Hamilton with movies filmed here</a>
+      <br>
+      <a href="legendaryhome.html">Site 1</a>
+      <br>
+      <a href="site 1/blanksite.html">Site 2</a>
+    </div></div></div>
+
+
+
+<div id="searchbox">
+  <p id="demo"></p>
+
+<input id="myInput"  list="genres">
+<p>What movie genre do you want to watch </p>
+
+<datalist id="genres">
+  <option value="Horror">
+  <option value="Thriller">
+  <option value="Comedy">
+  <option value="Drama">
+  <option value="Action">
+</datalist>
+
+<button onclick="myFunction()">Try it</button>
+    <input type="button" onclick="myFunc()" value="Reset">
+
+</div>
+
+<script>
+
+  function myFunc(){
+
+        document.getElementById('demo').innerHTML=" ";
+        document.getElementById('myInput').innerHTML=" ";
+
+}
+
+function myFunction() {
+  var text;
+  var movies = (document.getElementById("myInput").value).toLowerCase();
+  console.log(movies);
+
+  switch(movies) {
+    case "horror":
+     text = "Halloween (1978), <br>28 Days Later... (2002),<br>A Quiet Place (2018), <br>Battle Royale (2000), <br> Saw (2004), <br> Split (IX) (2016), <br>House of 1000 Corpses (2003), <br> It (I) (2017), <br> Silent Hill (2006), <br> The Autopsy of Jane Doe (2016)";
+	document.getElementById('demo').style.color="white";
+  document.body.style.backgroundColor="black";
+  document.getElementById('demo').style.borderRadius="15px";
+  document.getElementById('demo').style.backgroundColor="50px";
+  document.getElementById('demo').style.textAlign="center";
+    break;
+
+    case "thriller":
+    text = "Seven (1995) ,<br>The Silience Of the Lambs (1991),<br> Rear Window (1954),<br> Shutter Island (2010),<br> The Sixth Sense (1999),<br> Psycho (1960),<br> Jaws (1975),<br> Zodiac (2007),<br> No Country For Old Men (2007),<br> Inception (2010)";
+    document.getElementById('demo').style.backgroundColor='grey';
+      document.getElementById('demo').style.borderRadius="15px";
+
+
+    break;
+
+    case "comedy":
+    text = "Big Brother (1999),<br> Deadpool (2016),<br> Up (2009), <br>Toy Story (1995),"  ;
+    document.getElementById('demo').style.color="black";
+        document.getElementById('demo').style.backgroundColor='red';
+          document.getElementById('demo').style.borderRadius="15px";
+
+
+    break;
+    case "drama":
+    text = "Schindler's List (1993) , <br> Snatch (2000),<br> City of God (2002)";
+    document.getElementById('demo').style.backgroundColor='blue';
+          document.getElementById('demo').style.borderRadius="15px";
+    break;
+    case "action":
+    text = "John Wick , <br> 2 (2000),<br> 3";
+    document.getElementById('demo').style.backgroundColor='orange';
+          document.getElementById('demo').style.borderRadius="15px";
+    break;
+    default:
+    text = "I have never heard of that genre...";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

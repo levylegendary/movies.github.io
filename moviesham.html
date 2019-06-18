@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+	 <link rel="stylesheet" type="text/css" href="CSS/styled.css"> 
+
+<style type="text/css">
+body {background-image: url('leaf.png');
+	 background-repeat: no-repeat;
+	 background-position: center;}
+
+	  li {
+  width: 100px;
+  height: 50px;
+  background: red;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+}
+
+li:hover {
+  width: 300px;
+</style>
+<html>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+  		  <span>Movie Recommendation Menu</span>
+      <a href="homepage.html">  Home Page</a>
+      <br>
+			<a href="radiosite.html">  Radio Site</a>
+			<br>
+			<a href="searchname.html">Search by Genre Site </a>
+			<br>
+			<a href="displayblock.html">Display Block </a>
+			<br>
+			<a href="innerhtml.html">Multiple InnerHTMLS</a>
+			<br>
+      <a href="jqueryintro.html">Jquery Clickables</a>
+      <br>
+      <a href="appendtxt.html">Append your own movie list</a>
+      <br>
+      <a href="movieswithratingbutton.html">Movies list with rating</a>
+      <br>
+      <a href="slidedownmovies.html">Movies show with a slide down</a>
+      <br>
+      <a href="moviesham.html">Map of Hamilton with movies filmed here</a>
+      <br>
+			<a href="legendaryhome.html">Site 1</a>
+      <br>
+      <a href="site 1/blanksite.html">Site 2</a>
+    </div></div></div>
+
+
+<h1>Hamilton Ontario Canada </h1>
+
+<div id="googleMap" style="width:50%;height:500px;"></div>
+<hr>
+
+<p> Many movies and tv shows are filmed in Hamilton Ontario such as : </p>
+<ol>
+  <li span style=" background-color: white">Exit Wounds</li>
+  <li >Cinderella Man</li>
+  <li  id="libackground" 
+  	style= "background-color: white; background-image:url('leaf.png');
+  	 background-size: 50px ;
+  	 background-repeat: no-repeat ;
+  	 background-position: center;"
+  	 >Cheaper by the Dozen</li>
+  <li>Canadian Bacon</li>
+</ol>
+<script>
+
+
+function myMap() {
+var myLatlng = new google.maps.LatLng(43.239120,-79.885210);
+
+var mapOptions = {
+  zoom: 10,
+  center: myLatlng
+}
+
+
+
+var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+
+
+var marker = new google.maps.Marker({
+    position: myLatlng,
+      animation:google.maps.Animation.BOUNCE,
+        icon:'heart.png'
+
+  
+});
+
+
+
+
+ marker.setMap(map);
+
+
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbFzcV2JjUIMsbHjIGMITbNL_nhlq2KUM&callback=myMap"></script>
+
+
+</body>
+</html>

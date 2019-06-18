@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="CSS/styled.css">
+ <style type="text/css">
+ 	.movieblocked {text-align: center;
+ 		padding: 20px;
+ 		border: 2px solid black;}
+
+.dropbtn {
+  float: left;
+
+  background-color: #4CAF50;
+  color: white;
+  padding: 25px;
+  font-size: 24px;
+
+  border: none;
+}
+
+.dropdown {
+  float: left;
+
+  margin-left: 10%;
+  margin-top: 2%;
+  border: 2px solid black;
+  position: relative;
+  display: inline-block;
+}
+
+
+#comedy, #drama, #horrors { border: 2px solid;
+  padding: 20px; 
+  width: 90%;
+  resize: both;
+  overflow: auto;}
+
+ </style>
+<body>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+  		  <span>Movie Recommendation Menu</span>
+      <a href="homepage.html">  Home Page</a>
+      <br>
+			<a href="radiosite.html">  Radio Site</a>
+			<br>
+			<a href="searchname.html">Search by Genre Site </a>
+			<br>
+			<a href="displayblock.html">Display Block </a>
+			<br>
+			<a href="innerhtml.html">Multiple InnerHTMLS</a>
+			<br>
+      <a href="jqueryintro.html">Jquery Clickables</a>
+      <br>
+      <a href="appendtxt.html">Append your own movie list</a>
+      <br>
+      <a href="movieswithratingbutton.html">Movies list with rating</a>
+      <br>
+      <a href="slidedownmovies.html">Movies show with a slide down</a>
+      <br>
+      <a href="moviesham.html">Map of Hamilton with movies filmed here</a>
+      <br>
+			<a href="legendaryhome.html">Site 1</a>
+      <br>
+      <a href="site 1/blanksite.html">Site 2</a>
+    </div></div></div>
+    
+<div class="movieblocked">
+
+
+<h2>LEGENDARY MOVIES</h2>
+
+<button type="button" onclick="document.getElementById('comedy').style.display='block'">Click Me For<br> Comedy Movies!</button>
+
+<button type="button" onclick="document.getElementById('drama').style.display='block'">Click Me For <br>Drama Movies!</button>
+
+<button type="button" onclick="document.getElementById('horrors').style.display='block'">Click Me For <br>Horror Movies!</button>
+
+<br>
+<ul id="comedy" style="display:none">
+	<li>Shaun Of The Dead (2004)</li>
+	<li>Anchorman (2004)</li>
+	<li>Superbad (2007)"</li> 
+	<li>Monty Python and the Holy Grail (1975)</li>
+	<li>The Hangover (2009)</li>
+	<li>Ghostbusters (1984)</li>
+	<li>40 Year Old Virgin (2013)</li>
+	<li>The Big Lebowski (1998)</li>
+	<li>Dumb and Dumber (1994)</li>
+	<li>Animal House (1978)"</li>
+</ul>
+
+
+<ul id="drama" style="display:none">
+	<li>Count of Monte Cristo (2002) </li>
+	<li>Ragging Bull (1980)</li>
+	<li>Nightcrawler(2014)</li>
+	<li>City Of God (2002)</li>
+	<li> The Godfather(1972)</li>
+	<li>The Shawshank Redemption (1994)</li>
+	<li>Good Will Hunting (1997)</li>
+	<li>Gladiator (2000)</li>
+	<li>The Departed (2006)</li>
+	<li>Casablanca (1942)</li>
+</ul>
+
+
+<ul id="horrors" style="display:none">
+	<li>The Cabin In The Woods (2011) </li>
+	<li>	Scream (1996) </li>
+	<li>	Halloween (1978)</li>
+	<li>	It (2017)</li>
+	<li>	The Shining (1989)</li>
+	<li>	Get Out (2017)</li>
+	<li>	Psycho (1960)</li>
+	<li>	A Nightmare on Elm Street (1984)</li>
+	<li>	The Texas Chain Saw Massacre (1974)</li>
+	<li>	The Blair WItch Project (1999)</li>
+</ul>
+
+
+
+</div>
+
+</body>
+</html> 
